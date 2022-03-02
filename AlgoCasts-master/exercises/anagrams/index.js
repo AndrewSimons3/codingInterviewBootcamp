@@ -33,7 +33,7 @@ function anagrams(stringA, stringB) {
 function buildCharMap (str) {
   const charMap = {};
 
-  for (let char of str.replace(/[^\W]/g, "").toLowerCase()) {
+  for (let char of str.replace(/[^\w]/g, "").toLowerCase()) {
     charMap[char] = charMap[char] + 1 || 1;
   }
   
@@ -43,12 +43,12 @@ function buildCharMap (str) {
 
 
 //SOLUTION 2
-function anagrams(stringA, stringB) {
-  return cleanString(stringA) === cleanString(stringB)
-}
+// function anagrams(stringA, stringB) {
+//   return cleanString(stringA) === cleanString(stringB)
+// }
 
 
-function cleanString(str) {
-  return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
-}
+// function cleanString(str) {
+//   return str.replace(/[^\w]/g, '').toLowerCase().split('').sort().join('')
+// }
 module.exports = anagrams;
