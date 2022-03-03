@@ -18,7 +18,8 @@
 //       '####'
 
 
-//SOLUTION 2
+
+//SOLUTION 1
 function steps(n) {
   for (let row = 0; row < n; row++) {
     let stair = '';
@@ -30,8 +31,7 @@ function steps(n) {
         stair += ' ';
       }
     }
-
-    console.log(stair)
+    console.log(stair);
   }
 }
 
